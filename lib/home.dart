@@ -58,7 +58,6 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Maresa Velazquez Martinez\n'
                   'Hola, $correo',
                   style: getTextStyle(
                     fuente,
@@ -70,6 +69,14 @@ class HomePage extends StatelessWidget {
                   onPressed: cerrarSesion,
                   child: const Text('Cerrar sesión'),
                   style: ElevatedButton.styleFrom(backgroundColor: navColor),
+                ),
+                const SizedBox(height: 250),
+                Text(
+                  'Maresa Velazquez Martinez',
+                  style: TextStyle(
+                    color: isDark ? Colors.white70 : Colors.black54,
+                    fontSize: 16,
+                  ),
                 ),
               ],
             ),
